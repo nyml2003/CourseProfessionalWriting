@@ -18,9 +18,9 @@ Vid2Seq用专门的时态增强语言模型
 在诸如测试断言生成和程序修复等任务中展示了有效性。对于结构化的知识，焦炭
 方法\cite{li2023chain}首先提取与输入查询相关的事实
 \
-从知识图谱中，然后将这些事实集成为提示
-在输入中，提高知识图谱的性能
-问题的任务。
+从知识图谱中，然后将这些事实集成为提示在输入中，提高知识图谱的性能问题的任务\cite{peng2024graphretrievalaugmentedgenerationsurvey}。
+
+这篇文章\cite{li2024retrievalaugmentedgenerationlongcontext}对RAG和长上下文（Long-Context，简称LC）LLMs进行了全面比较，旨在利用两者的优势。
 \section{外部知识的质量控制}
 
 在考量大型语言模型（LLMs）的安全性和操纵性时，外部知识的质量控制至关重要。检索质量是检索增强型语言模型（RAG）系统有效性的根本，它直接影响到生成内容的相关性和准确性。然而，现有的检索方法常常面临挑战，比如数据中的噪声、不相关文档和碎片化信息，这些都可能干扰生成过程的质量。
@@ -43,3 +43,5 @@ LLM系统大大提高了工作效率，但是大语言模型的滥用会导致�
 \cite{kuppamanipulating}。
 
 TrojanRAG是一种针对检索增强型语言模型（RALM）的新型攻击方式，它利用了RALM的自然漏洞来注入联合后门，从而在各种通用攻击场景中操纵基于大型语言模型（LLMs）的API。这些攻击场景包括攻击者主动攻击、用户被动执行后门攻击以及后门式越狱攻击。TrojanRAG不仅能够在正常推理、可转移和CoT（思维链）中实现强大的后门激活，而且在日常查询中保持高可用性。这一点在正常查询中尤为重要，因为它意味着攻击者可以在不引起用户怀疑的情况下实施攻击\cite{cheng2024trojanragretrievalaugmentedgenerationbackdoor}。
+
+也有研究\cite{du2024vulragenhancingllmbasedvulnerability}致力于利用LLMs和RAG框架来提高软件漏洞检测准确性。
